@@ -1,0 +1,40 @@
+# CODEOWNERS file for content-backend-849
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-ml @Armor-test/squad-reporting @Armor-test/squad-database
+
+# Directory ownership
+/services/ @Armor-test/squad-tooling @Armor-test/unit-devops @Armor-test/squad-reporting
+/pages/ @Armor-test/squad-api @Armor-test/squad-mobile @Armor-test/squad-apps
+/hooks/ @Armor-test/squad-payments @Armor-test/dept-test
+/modules/ @Armor-test/team-research @Armor-test/dept-logging
+/web/ @Armor-test/grp-api @Armor-test/squad-ml @Armor-test/team-governance
+/helpers/ @Armor-test/unit-design @Armor-test/team-core @Armor-test/dept-test
+/config/ @Armor-test/unit-design @Armor-test/dept-logging @Armor-test/squad-research
+/app/ @Armor-test/squad-ml @Armor-test/team-governance
+/ui/ @Armor-test/dept-release @Armor-test/squad-research @Armor-test/grp-ui
+/core/ @Armor-test/grp-integration @Armor-test/squad-apps
+/src/ @Armor-test/unit-governance @Armor-test/team-logging
+/third_party/ @Armor-test/team-reporting @Armor-test/squad-performance @Armor-test/team-logging
+
+# File type ownership
+*.cpp @Armor-test/team-frontend @Armor-test/dept-reporting @Armor-test/dept-release
+*.ts @Armor-test/squad-cloud @Armor-test/dept-security
+*.sh @Armor-test/dept-security @Armor-test/dept-reporting @Armor-test/dept-notifications
+*.cs @Armor-test/dept-reporting @Armor-test/squad-qa @Armor-test/unit-cloud
+*.sql @Armor-test/team-reporting @Armor-test/squad-tooling @Armor-test/unit-cloud
+*.lock @Armor-test/grp-search @Armor-test/squad-search @Armor-test/unit-cloud
+*.rb @Armor-test/squad-apps @Armor-test/dept-security
+*.jsx @Armor-test/team-logging @Armor-test/squad-reporting
+*.gradle @Armor-test/grp-integration @Armor-test/squad-api
+*.ini @Armor-test/squad-performance @Armor-test/squad-ml
+*.go @Armor-test/dept-identity @Armor-test/dept-billing
+*.tf @Armor-test/squad-search @Armor-test/dept-automation @Armor-test/grp-reporting
+*.rs @Armor-test/grp-api @Armor-test/unit-test
+*.kt @Armor-test/grp-api @Armor-test/squad-tooling @Armor-test/grp-search
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
